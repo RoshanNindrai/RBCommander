@@ -14,6 +14,14 @@
 		6AEDD8A819E1F68F00D5F6CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AEDD8A719E1F68F00D5F6CE /* Images.xcassets */; };
 		6AEDD8AB19E1F68F00D5F6CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AEDD8A919E1F68F00D5F6CE /* LaunchScreen.xib */; };
 		6AEDD8B719E1F68F00D5F6CE /* RBCommandBusDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDD8B619E1F68F00D5F6CE /* RBCommandBusDemoTests.m */; };
+		6AEDD8C819E1F7D100D5F6CE /* RBCommandBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDD8C719E1F7D100D5F6CE /* RBCommandBus.m */; };
+		6AEDD8C919E1F7D100D5F6CE /* RBCommandBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDD8C719E1F7D100D5F6CE /* RBCommandBus.m */; };
+		6AEDD8CD19E1F85700D5F6CE /* RBCommandTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDD8CC19E1F85700D5F6CE /* RBCommandTranslator.m */; };
+		6AEDD8CE19E1F85700D5F6CE /* RBCommandTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDD8CC19E1F85700D5F6CE /* RBCommandTranslator.m */; };
+		6AEDD8D519E200D500D5F6CE /* LoginCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDD8D419E200D500D5F6CE /* LoginCommand.m */; };
+		6AEDD8D619E200D500D5F6CE /* LoginCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDD8D419E200D500D5F6CE /* LoginCommand.m */; };
+		6AEDD8D919E2011B00D5F6CE /* LoginCommandHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDD8D819E2011B00D5F6CE /* LoginCommandHandler.m */; };
+		6AEDD8DA19E2011B00D5F6CE /* LoginCommandHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDD8D819E2011B00D5F6CE /* LoginCommandHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,15 @@
 		6AEDD8B019E1F68F00D5F6CE /* RBCommandBusDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBCommandBusDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEDD8B519E1F68F00D5F6CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AEDD8B619E1F68F00D5F6CE /* RBCommandBusDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBCommandBusDemoTests.m; sourceTree = "<group>"; };
+		6AEDD8C619E1F7D100D5F6CE /* RBCommandBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCommandBus.h; sourceTree = "<group>"; };
+		6AEDD8C719E1F7D100D5F6CE /* RBCommandBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCommandBus.m; sourceTree = "<group>"; };
+		6AEDD8CB19E1F85700D5F6CE /* RBCommandTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBCommandTranslator.h; sourceTree = "<group>"; };
+		6AEDD8CC19E1F85700D5F6CE /* RBCommandTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBCommandTranslator.m; sourceTree = "<group>"; };
+		6AEDD8D019E1FC8500D5F6CE /* RBHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBHandlerProtocol.h; sourceTree = "<group>"; };
+		6AEDD8D319E200D500D5F6CE /* LoginCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginCommand.h; sourceTree = "<group>"; };
+		6AEDD8D419E200D500D5F6CE /* LoginCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginCommand.m; sourceTree = "<group>"; };
+		6AEDD8D719E2011B00D5F6CE /* LoginCommandHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginCommandHandler.h; sourceTree = "<group>"; };
+		6AEDD8D819E2011B00D5F6CE /* LoginCommandHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginCommandHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +98,10 @@
 		6AEDD89919E1F68F00D5F6CE /* RBCommandBusDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6AEDD89E19E1F68F00D5F6CE /* AppDelegate.h */,
-				6AEDD89F19E1F68F00D5F6CE /* AppDelegate.m */,
-				6AEDD8A119E1F68F00D5F6CE /* ViewController.h */,
-				6AEDD8A219E1F68F00D5F6CE /* ViewController.m */,
-				6AEDD8A419E1F68F00D5F6CE /* Main.storyboard */,
-				6AEDD8A719E1F68F00D5F6CE /* Images.xcassets */,
-				6AEDD8A919E1F68F00D5F6CE /* LaunchScreen.xib */,
+				6AEDD8DB19E202D800D5F6CE /* RBCommandBus */,
+				6AEDD8D119E200AD00D5F6CE /* commands */,
+				6AEDD8C219E1F6AB00D5F6CE /* Controllers */,
+				6AEDD8C119E1F69E00D5F6CE /* App Delegate */,
 				6AEDD89A19E1F68F00D5F6CE /* Supporting Files */,
 			);
 			path = RBCommandBusDemo;
@@ -96,6 +110,9 @@
 		6AEDD89A19E1F68F00D5F6CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6AEDD8A419E1F68F00D5F6CE /* Main.storyboard */,
+				6AEDD8A719E1F68F00D5F6CE /* Images.xcassets */,
+				6AEDD8A919E1F68F00D5F6CE /* LaunchScreen.xib */,
 				6AEDD89B19E1F68F00D5F6CE /* Info.plist */,
 				6AEDD89C19E1F68F00D5F6CE /* main.m */,
 			);
@@ -117,6 +134,79 @@
 				6AEDD8B519E1F68F00D5F6CE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6AEDD8C019E1F69400D5F6CE /* Command Bus */ = {
+			isa = PBXGroup;
+			children = (
+				6AEDD8C619E1F7D100D5F6CE /* RBCommandBus.h */,
+				6AEDD8C719E1F7D100D5F6CE /* RBCommandBus.m */,
+			);
+			name = "Command Bus";
+			sourceTree = "<group>";
+		};
+		6AEDD8C119E1F69E00D5F6CE /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6AEDD89E19E1F68F00D5F6CE /* AppDelegate.h */,
+				6AEDD89F19E1F68F00D5F6CE /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		6AEDD8C219E1F6AB00D5F6CE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6AEDD8A119E1F68F00D5F6CE /* ViewController.h */,
+				6AEDD8A219E1F68F00D5F6CE /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6AEDD8CA19E1F83A00D5F6CE /* RBCommandTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				6AEDD8CB19E1F85700D5F6CE /* RBCommandTranslator.h */,
+				6AEDD8CC19E1F85700D5F6CE /* RBCommandTranslator.m */,
+			);
+			name = RBCommandTranslator;
+			sourceTree = "<group>";
+		};
+		6AEDD8CF19E1FC5900D5F6CE /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6AEDD8D019E1FC8500D5F6CE /* RBHandlerProtocol.h */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		6AEDD8D119E200AD00D5F6CE /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				6AEDD8D219E200B800D5F6CE /* login */,
+			);
+			name = commands;
+			sourceTree = "<group>";
+		};
+		6AEDD8D219E200B800D5F6CE /* login */ = {
+			isa = PBXGroup;
+			children = (
+				6AEDD8D319E200D500D5F6CE /* LoginCommand.h */,
+				6AEDD8D419E200D500D5F6CE /* LoginCommand.m */,
+				6AEDD8D719E2011B00D5F6CE /* LoginCommandHandler.h */,
+				6AEDD8D819E2011B00D5F6CE /* LoginCommandHandler.m */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		6AEDD8DB19E202D800D5F6CE /* RBCommandBus */ = {
+			isa = PBXGroup;
+			children = (
+				6AEDD8CF19E1FC5900D5F6CE /* Protocol */,
+				6AEDD8CA19E1F83A00D5F6CE /* RBCommandTranslator */,
+				6AEDD8C019E1F69400D5F6CE /* Command Bus */,
+			);
+			name = RBCommandBus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +310,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AEDD8A319E1F68F00D5F6CE /* ViewController.m in Sources */,
+				6AEDD8D919E2011B00D5F6CE /* LoginCommandHandler.m in Sources */,
 				6AEDD8A019E1F68F00D5F6CE /* AppDelegate.m in Sources */,
+				6AEDD8CD19E1F85700D5F6CE /* RBCommandTranslator.m in Sources */,
+				6AEDD8C819E1F7D100D5F6CE /* RBCommandBus.m in Sources */,
 				6AEDD89D19E1F68F00D5F6CE /* main.m in Sources */,
+				6AEDD8D519E200D500D5F6CE /* LoginCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEDD8C919E1F7D100D5F6CE /* RBCommandBus.m in Sources */,
+				6AEDD8D619E200D500D5F6CE /* LoginCommand.m in Sources */,
+				6AEDD8CE19E1F85700D5F6CE /* RBCommandTranslator.m in Sources */,
 				6AEDD8B719E1F68F00D5F6CE /* RBCommandBusDemoTests.m in Sources */,
+				6AEDD8DA19E2011B00D5F6CE /* LoginCommandHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
