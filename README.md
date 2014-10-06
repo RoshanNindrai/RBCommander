@@ -2,6 +2,15 @@ RBCommander
 ============
 Command are used to remove all of the business logic that goes inside ViewController to their respective commands and handlers.
 
+Installation
+======
+
+The preferred method of installation is with CocoaPods. Add this line to the podfile
+
+    pod 'RBCommander',  '~>0.0.2'
+    
+If you want to install manually, copy the RBCommander folder to the project director.
+
 The Command
 ============
 
