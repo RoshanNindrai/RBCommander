@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>787AEF25-9EBA-44A3-B29F-B936C058AF18</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RBCommandBusDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BF668ED848C65BC0E9C5ADB0997CF83FD2AE91AA</key>
+		<string>https://github.com/RoshanNindrai/RBCommandBus.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RBCommandBusDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BF668ED848C65BC0E9C5ADB0997CF83FD2AE91AA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RoshanNindrai/RBCommandBus.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BF668ED848C65BC0E9C5ADB0997CF83FD2AE91AA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BF668ED848C65BC0E9C5ADB0997CF83FD2AE91AA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RBCommandBusDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
