@@ -10,6 +10,8 @@
 
 @interface LoginCommand : NSObject
 
+extern NSString *const KDIDLOGINNOTIFICATION;
+
 @property(nonatomic, strong)NSString *username;
 @property(nonatomic, strong)NSString *password;
 

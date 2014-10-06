@@ -10,4 +10,6 @@
 
 @implementation LoginCommand
 
+NSString *const KDIDLOGINNOTIFICATION = @"KDIDLOGINNOTIFICATION";
+
 @end

@@ -13,6 +13,7 @@
 @interface ViewController ()
 
 @property(nonatomic, strong)RBCommandBus *commandBus;
+@property (strong, nonatomic) IBOutlet UILabel *result;
 
 @end
 
@@ -23,14 +24,22 @@
     
     //MOVE THIS TO YOUR BASE CLASS
     self.commandBus = [RBCommandBus new];
+    [self subscriptions];
     [self performLogin];
-    [self performLoginWithCompletion];
+    //[self performLoginWithCompletion];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)subscriptions{
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didLogIn:) name:KDIDLOGINNOTIFICATION object:nil];
+    
+    
 }
 
 -(void)performLogin{
@@ -40,23 +49,32 @@
     loginCommand.username = @"John Appleseed";
     loginCommand.password = @"password";
     
-    NSLog(@"Executed command result: %@", [self.commandBus executeCommand:loginCommand]);
+    [self.commandBus executeCommand:loginCommand];
+    
     
 }
 
--(void)performLoginWithCompletion{
-    
-    LoginCommand *loginCommand = [LoginCommand new];
-    
-    loginCommand.username = @"John Appleseed";
-    loginCommand.password = @"password";
-    
-    [self.commandBus executeCommand:loginCommand withCompletion:^(NSString *result) {
-        
-        NSLog(@"Result after completion %@", result);
-        
-    }];
+//-(void)performLoginWithCompletion{
+//    
+//    LoginCommand *loginCommand = [LoginCommand new];
+//    
+//    loginCommand.username = @"John Appleseed";
+//    loginCommand.password = @"password";
+//    
+//    [self.commandBus executeCommand:loginCommand withCompletion:^(NSString *result) {
+//        
+//        NSLog(@"Result after completion %@", result);
+//        
+//    }];
+//
+//}
 
+-(void)didLogIn:(NSNotification *)notification{
+    
+    NSString *result = [notification.userInfo objectForKey:@"result"];
+    
+    [self.result setText:result];
+    
 }
 
 @end
