@@ -39,7 +39,7 @@ SAMPLE PROJECT
 
 The demo project gives a overall insight on how to uses the commander pattern.
 
-Lincense
+License
 ============
 
 RBCommander is available under The MIT License (MIT)
