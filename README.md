@@ -10,7 +10,7 @@ A command is a DTO that carries the instruction needed to perform a specific bus
 The CommandHandler
 ============
 
-The command handler uses the Command DTO object and performs a set of operations over or along the object.
+The command handler uses the Command DTO object and performs a set of operations over or along the object. The CommandHandler conforms to RBHandlerProtocol
 
 The CommandBus
 ============
