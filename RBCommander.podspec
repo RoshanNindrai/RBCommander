@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name            = 'RBCommander'
-  s.version         = '0.0.2'
+  s.version         = '0.1.2'
   s.license         = 'MIT'
   s.platform        = :ios, '7.0'
 
