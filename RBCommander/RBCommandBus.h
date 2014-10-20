@@ -7,8 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RBCommandTranslator.h"
-#import "RBHandlerProtocol.h"
+
+@protocol RBHandlerProtocol <NSObject>
+
+@required
+-(id)handle:(id)command;
+
+@end
+
 
 @interface RBCommandBus : NSObject
 

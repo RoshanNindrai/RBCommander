@@ -8,6 +8,28 @@
 
 #import "RBCommandBus.h"
 
+@interface RBCommandTranslator : NSObject
+
+-(NSString *)toCommandHandler:(id)command;
+
+@end
+
+@implementation RBCommandTranslator
+
+NSString *const KHANDLERCLASSSUFFIX = @"Handler";
+
+-(NSString *)toCommandHandler:(id)command
+{
+    
+    NSString *commandClassName =  NSStringFromClass([command class]);
+    
+    return [commandClassName stringByAppendingString:KHANDLERCLASSSUFFIX];
+    
+}
+
+@end
+
+
 @interface RBCommandBus ()
 
 @property(nonatomic, strong)RBCommandTranslator *commandTranslator;

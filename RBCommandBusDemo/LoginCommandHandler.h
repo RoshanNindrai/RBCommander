@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RBHandlerProtocol.h"
+#import "RBCommandBus.h"
 
 @interface LoginCommandHandler : NSObject<RBHandlerProtocol>
 
