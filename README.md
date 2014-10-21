@@ -7,8 +7,7 @@ Installation
 
 The preferred method of installation is with CocoaPods. Add this line to the podfile
 
-    pod 'RBCommander',  '~>0.0.2'
-    
+    pod 'RBCommander',  '~>0.1.2'
 If you want to install manually, copy the RBCommander folder to the project director.
 
 The Command
