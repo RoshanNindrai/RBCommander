@@ -21,7 +21,8 @@
 
 -(void)didLogIn:(LoginCommand *)command{
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:KDIDLOGINNOTIFICATION object:nil userInfo:@{@"result":[command.username stringByAppendingString:@" logged in"]}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:KDIDLOGINNOTIFICATION object:nil
+                                                      userInfo:@{@"result":[command.username stringByAppendingString:@" logged in"]}];
     
 }
 

@@ -37,7 +37,9 @@
 
 -(void)subscriptions{
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didLogIn:) name:KDIDLOGINNOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didLogIn:)
+                                                 name:KDIDLOGINNOTIFICATION object:nil];
     
     
 }
