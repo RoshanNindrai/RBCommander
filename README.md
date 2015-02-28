@@ -13,7 +13,7 @@ If you want to install manually, copy the RBCommander folder to the project dire
 The Command
 ============
 
-A command is a DTO that carries the instruction needed to perform a specific business login.
+A command is a DTO that carries the data needed to perform a specific business logic.
 
 The CommandHandler
 ============
