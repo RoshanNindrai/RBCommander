@@ -24,7 +24,6 @@
     
     //MOVE THIS TO YOUR BASE CLASS
     self.commandBus = [RBCommandBus new];
-    [self subscriptions];
     [self performLogin];
     //[self performLoginWithCompletion];
     // Do any additional setup after loading the view, typically from a nib.
@@ -35,14 +34,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)subscriptions{
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(didLogIn:)
-                                                 name:KDIDLOGINNOTIFICATION object:nil];
-    
-    
-}
 
 -(void)performLogin{
     
@@ -51,32 +42,12 @@
     loginCommand.username = @"John Appleseed";
     loginCommand.password = @"password";
     
-    [self.commandBus executeCommand:loginCommand];
+    [self.commandBus executeCommand:loginCommand withCompletion:^(id result) {
+        [self.result setText:result];
+    }];
     
     
 }
 
-//-(void)performLoginWithCompletion{
-//    
-//    LoginCommand *loginCommand = [LoginCommand new];
-//    
-//    loginCommand.username = @"John Appleseed";
-//    loginCommand.password = @"password";
-//    
-//    [self.commandBus executeCommand:loginCommand withCompletion:^(NSString *result) {
-//        
-//        NSLog(@"Result after completion %@", result);
-//        
-//    }];
-//
-//}
-
--(void)didLogIn:(NSNotification *)notification{
-    
-    NSString *result = [notification.userInfo objectForKey:@"result"];
-    
-    [self.result setText:result];
-    
-}
 
 @end

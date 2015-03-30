@@ -64,8 +64,15 @@ NSString *const KHANDLERCLASSSUFFIX = @"Handler";
 
 -(void)executeCommand:(id)command withCompletion:(void(^)(id result))completion{
     
-    if(completion)
-        completion([self executeCommand:command]);
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        
+        id result = [self executeCommand:command];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if(completion)
+                completion(result);
+        });
+        
+    });
     
 
 }

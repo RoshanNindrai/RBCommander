@@ -13,17 +13,10 @@
 
 -(id)handle:(LoginCommand *)command{
     
-    [self performSelector:@selector(didLogIn:) withObject:command afterDelay:2.0];
-
-    return nil;
+    sleep(2);
+    return [command.username stringByAppendingString:@" logged in"];
     
 }
 
--(void)didLogIn:(LoginCommand *)command{
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:KDIDLOGINNOTIFICATION object:nil
-                                                      userInfo:@{@"result":[command.username stringByAppendingString:@" logged in"]}];
-    
-}
 
 @end
